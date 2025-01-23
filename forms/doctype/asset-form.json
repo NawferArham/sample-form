@@ -1,82 +1,63 @@
-{
-    "doctype": "DocType",
-    "name": "Sample",
-    "module": "HR",
-    "custom": 1,
-    "fields": [
-      {
-        "fieldname": "signature",
-        "fieldtype": "Signature",
-        "label": "Signature of Employee"
-      },
-      {
-        "fieldname": "new_asset",
-        "fieldtype": "Check",
-        "label": "New Asset"
-      },
-      {
-        "fieldname": "asset_transfer",
-        "fieldtype": "Check",
-        "label": "Asset Transfer"
-      },
-      {
-        "fieldname": "name",
-        "fieldtype": "Data",
-        "label": "Employee Name"
-      },
-      {
-        "fieldname": "code",
-        "fieldtype": "Link",
-        "label": "Employee Code",
-        "options": "Employee"
-      },
-      {
-        "fieldname": "designation",
-        "fieldtype": "Link",
-        "label": "Designation",
-        "options": "Designation"
-      },
-      {
-        "fieldname": "department",
-        "fieldtype": "Link",
-        "label": "Department",
-        "options": "Department"
-      },
-      {
-        "fieldname": "fixed_asset",
-        "fieldtype": "Data",
-        "label": "Fixed Asset"
-      },
-      {
-        "fieldname": "brand",
-        "fieldtype": "Data",
-        "label": "Brand & Model No"
-      },
-      {
-        "fieldname": "specs",
-        "fieldtype": "Text",
-        "label": "Specifications"
-      },
-      {
-        "fieldname": "price",
-        "fieldtype": "Currency",
-        "label": "Item Price"
-      },
-      {
-        "fieldname": "warrenty",
-        "fieldtype": "Date",
-        "label": "Warrenty Period"
-      },
-      {
-        "fieldname": "issue_date",
-        "fieldtype": "Date",
-        "label": "Date of Issue"
-      },
-      {
-        "fieldname": "remarks",
-        "fieldtype": "Data",
-        "label": "REMARKS"
-      }
-    ]
-  }
-  
+
+ { "autoname":"MEM.#####", 
+  "creation": "2014-05-06 14:20:39.589489", 
+  "docstatus": 0, 
+  "doctype": "DocType", 
+  "document_type": "Master", 
+  "fields": [
+   {
+    "fieldname": "first_name", 
+    "fieldtype": "Data", 
+    "in_list_view": 1, 
+    "label": "First Name", 
+    "permlevel": 0, 
+    "reqd": 1
+   }, 
+   {
+    "fieldname": "last_name", 
+    "fieldtype": "Data", 
+    "in_list_view": 1, 
+    "label": "Last Name", 
+    "permlevel": 0
+   }, 
+   {
+    "fieldname": "email_id", 
+    "fieldtype": "Data", 
+    "in_list_view": 1, 
+    "label": "Email Id", 
+    "permlevel": 0, 
+    "reqd": 1
+   }, 
+   {
+    "fieldname": "phone", 
+    "fieldtype": "Data", 
+    "in_list_view": 1, 
+    "label": "Phone", 
+    "permlevel": 0
+   }, 
+   {
+    "fieldname": "address", 
+    "fieldtype": "Text", 
+    "in_list_view": 1, 
+    "label": "Address", 
+    "permlevel": 0
+   }
+  ], 
+  "modified": "2014-05-06 14:23:47.229211", 
+  "modified_by": "Administrator", 
+  "module": "Library Management", 
+  "name": "Library Member", 
+  "name_case": "", 
+  "owner": "Administrator", 
+  "permissions": [
+   {
+    "create": 1, 
+    "delete": 1, 
+    "permlevel": 0, 
+    "read": 1, 
+    "role": "Librarian", 
+    "write": 1
+   }
+  ], 
+  "search_fields": "first_name,last_name"}
+ 
